@@ -1,0 +1,46 @@
+<flat-profile>
+
+  <!-- ===== Provisioning Settings ===== -->
+  <!-- Change this URL to wherever you host this XML file -->
+  <Profile_Rule ua="rw">http://YOUR-PROVISION-SERVER/spa$MA.xml</Profile_Rule>
+  <Resync_Periodic ua="rw">3600</Resync_Periodic>
+  <Resync_On_Reset ua="rw">Yes</Resync_On_Reset>
+  <Upgrade_Enable ua="rw">Yes</Upgrade_Enable>
+
+  <!-- ===== Line 1 – Yeastar Extension 108 ===== -->
+  <Line_Enable_1_ ua="rw">Yes</Line_Enable_1_>
+
+  <!-- SIP Server / Proxy (Yeastar P Cloud) -->
+  <Proxy_1_ ua="rw">blueridge.pbx.bluecircuit.tech</Proxy_1_>
+  <Proxy_Port_1_ ua="rw">5060</Proxy_Port_1_>
+
+  <!-- Outbound Proxy (optional but recommended) -->
+  <Use_Outbound_Proxy_1_ ua="rw">Yes</Use_Outbound_Proxy_1_>
+  <Outbound_Proxy_1_ ua="rw">blueridge.pbx.bluecircuit.tech:5060</Outbound_Proxy_1_>
+
+  <!-- Registration -->
+  <Register_1_ ua="rw">Yes</Register_1_>
+  <Register_Expires_1_ ua="rw">300</Register_Expires_1_>
+
+  <!-- Subscriber Info -->
+  <Display_Name_1_ ua="rw">108</Display_Name_1_>
+  <User_ID_1_ ua="rw">108</User_ID_1_>
+  <Auth_ID_1_ ua="rw">M29AHhXk4K</Auth_ID_1_>
+  <Password_1_ ua="rw">di2hjCl71Z</Password_1_>
+  <Use_Auth_ID_1_ ua="rw">Yes</Use_Auth_ID_1_>
+
+  <!-- SIP Transport / NAT -->
+  <SIP_Port_1_ ua="rw">5060</SIP_Port_1_>
+  <SIP_Transport_1_ ua="rw">UDP</SIP_Transport_1_>
+  <NAT_Keep_Alive_Enable_1_ ua="rw">Yes</NAT_Keep_Alive_Enable_1_>
+
+  <!-- ===== US Dial Plan ===== -->
+  <!-- Standard US/Canada pattern + misc -->
+  <Dial_Plan_1_ ua="rw">(*xx|xx.|[3469]11|0|00|[2-9]xxxxxxxxx|1[2-9]xx[2-9]xxxxxx|xxxxxxxxxxxx.)</Dial_Plan_1_>
+
+  <!-- Optional: Caller ID & regional basics -->
+  <Time_Zone ua="rw">GMT-05:00</Time_Zone>
+  <Daylight_Saving_Time_Enable ua="rw">Yes</Daylight_Saving_Time_Enable>
+  <Locale ua="rw">en</Locale>
+
+</flat-profile>
