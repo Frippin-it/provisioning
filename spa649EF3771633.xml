@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <flat-profile>
 
-  <!-- ===== Provisioning Settings ===== -->
-  <!-- Change this URL to wherever you host this XML file -->
-  <Profile_Rule ua="rw">http://YOUR-PROVISION-SERVER/spa$MA.xml</Profile_Rule>
+  <!-- ===== Provisioning Settings (for future use) ===== -->
+  <!-- You *can* leave Profile_Rule blank here and set it on the phone UI.
+       If you want the phone to always point back to GitHub, you can keep this. -->
+  <Profile_Rule ua="rw">https://frippin-it.github.io/provisioning/spa$MA.xml</Profile_Rule>
   <Resync_Periodic ua="rw">3600</Resync_Periodic>
   <Resync_On_Reset ua="rw">Yes</Resync_On_Reset>
   <Upgrade_Enable ua="rw">Yes</Upgrade_Enable>
@@ -14,7 +16,7 @@
   <Proxy_1_ ua="rw">blueridge.pbx.bluecircuit.tech</Proxy_1_>
   <Proxy_Port_1_ ua="rw">5060</Proxy_Port_1_>
 
-  <!-- Outbound Proxy (optional but recommended) -->
+  <!-- Outbound Proxy -->
   <Use_Outbound_Proxy_1_ ua="rw">Yes</Use_Outbound_Proxy_1_>
   <Outbound_Proxy_1_ ua="rw">blueridge.pbx.bluecircuit.tech:5060</Outbound_Proxy_1_>
 
@@ -35,10 +37,10 @@
   <NAT_Keep_Alive_Enable_1_ ua="rw">Yes</NAT_Keep_Alive_Enable_1_>
 
   <!-- ===== US Dial Plan ===== -->
-  <!-- Standard US/Canada pattern + misc -->
+  <!-- US/Canada 10-digit, 11-digit, emergency, * codes -->
   <Dial_Plan_1_ ua="rw">(*xx|xx.|[3469]11|0|00|[2-9]xxxxxxxxx|1[2-9]xx[2-9]xxxxxx|xxxxxxxxxxxx.)</Dial_Plan_1_>
 
-  <!-- Optional: Caller ID & regional basics -->
+  <!-- Basic regional settings -->
   <Time_Zone ua="rw">GMT-05:00</Time_Zone>
   <Daylight_Saving_Time_Enable ua="rw">Yes</Daylight_Saving_Time_Enable>
   <Locale ua="rw">en</Locale>
